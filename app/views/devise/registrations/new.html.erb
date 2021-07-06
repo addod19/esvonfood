@@ -7,22 +7,22 @@
 
       <div class="field">
         <%= f.label :firstname %><br />
-        <%= f.text_field :firstname %>
+        <%= f.text_field :firstname, class: 'firstname' %>
       </div>
 
       <div class="field">
         <%= f.label :lastname %><br />
-        <%= f.text_field :lastname %>
+        <%= f.text_field :lastname, class: 'lastname' %>
       </div>
 
       <div class="field">
         <%= f.label :Phone %><br />
-        <%= f.text_field :phone_number %>
+        <%= f.text_field :phone_number, class: 'phone_number' %>
       </div>
 
       <div class="field">
         <%= f.label :email %><br />
-        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'email' %>
       </div>
 
       <div class="field">
@@ -30,18 +30,18 @@
         <% if @minimum_password_length %>
         <em>(<%= @minimum_password_length %> characters minimum)</em>
         <% end %><br />
-        <%= f.password_field :password, autocomplete: "new-password" %>
+        <%= f.password_field :password, autocomplete: "new-password", class: 'password' %>
       </div>
 
       <div class="field">
         <%= f.label :password_confirmation %><br />
-        <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+        <%= f.password_field :password_confirmation, autocomplete: "new-password", class: 'password_confirm' %>
       </div>
 
       <div class="actions">
-        <%= f.submit "Sign up" %>
+        <%= f.submit "Sign up", class: 'signup_btn' %>
       </div>
     <% end %>
-    <%= render "devise/shared/links" %>
+    <div class="actions", class: 'login_shared_link'><%= render "devise/shared/links" %></div>
   </section>
 </div>
