@@ -1,0 +1,133 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.main {
+    margin-top: -20px;
+    margin-left: -6px;
+    margin-right: -6px;
+    padding: 0;
+    // background-color: grey;
+    height: 80vh;
+    position: relative;
+}
+
+.link_wrapper {
+    width: 100%;
+    height: 8vh;
+    margin: 2vh;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.signup,
+.login {
+  list-style: none;
+  margin-left: 1em;
+  border: 0.2rem solid #fff;
+  border-radius: 2rem;
+  padding: 0.6em;
+  box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #bc13fe,
+              0 0 0.8rem #bc13fe,
+              0 0 2.8rem #bc13fe,
+              inset 0 0 1.3rem #bc13fe;
+}
+.login_link,
+.signup_link {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+.landing_view {
+  width: 100%;
+  height: 70vh;
+  position: absolute;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+}
+
+.left_view {
+  font-family: 'Ubuntu', sans-serif;
+
+  h2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: blue;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+    // animation: flicker 1.5s infinite alternate;
+  }
+
+  .div1 {
+    width: 80%;
+    // border: 1px solid black;
+    padding: 2rem;
+    margin: auto;
+    // font-size: 1.6px;
+  }
+
+  .div2 {
+    width: 90%;
+    height: 25vh;
+    margin: auto;
+    // border: 1px solid red;
+    margin-top: 2rem;
+    padding: 0.3em;
+  }
+}
+.center_view {
+  border: 1px solid green;
+}
+.right_view {
+ 
+}
+
+.defaultBtn {
+  width: 5em;
+  height: 2em;
+  border: 0.2rem solid #fff;
+  border-radius: 2rem;
+  box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              // 0 0 2rem #bc13fe,
+              // 0 0 0.8rem #bc13fe,
+              0 0 2.8rem #bc13fe,
+              inset 0 0 1.3rem #bc13fe;
+}
+
+.btnNum1 {
+  position: relative;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+// Registration
+.main_signup {
+  width: 100%;
+  height: 68vh;
+  // border: 1px solid black;
+}
+
+.signup_section,
+.login_section {
+  width: 80%;
+  margin: auto;
+  border: 1px solid black;
+}
+.login_section {
+  // border: 1px solid black;
+  position: relative;
+  margin-top: 3em;
+  height: 25em;
+}

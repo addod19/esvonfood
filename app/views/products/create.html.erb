@@ -1,0 +1,35 @@
+<h1>Products#create</h1>
+<%= form_for @product do |f| %>
+
+    <div class="field">
+      <%= f.label :Product Name %><br />
+      <%= f.text_field :name %>
+    </div>
+
+
+    <div class="field">
+      <%= f.label :Category %><br />
+      <%= f.text_field :category %>
+    </div>
+
+
+    <div class="field">
+      <%= f.label :Image %><br />
+      <%= f.text_field :image %>
+    </div>
+
+
+    <div class="field">
+      <%= f.label :Description%><br />
+      <%= f.text_field :description %>
+    </div>
+
+    <div class="field">
+      <%= f.label :Price %><br />
+      <%= f.text_field :price %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Product", class: "form-control btn btn-success mt-1" %>
+    </div>
+<% end %>

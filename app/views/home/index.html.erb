@@ -1,0 +1,7 @@
+<div class="main">
+	<% if signed_in? %>
+		<%= render 'auth_privilege' %>
+	<% else %>
+		<%= render 'visitor_privilege' %>
+	<% end %>
+</div>

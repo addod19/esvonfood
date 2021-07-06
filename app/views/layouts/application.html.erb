@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Skilltest</title>
+    <%= render 'layouts/bootstrap'%>
+    <%= render "layouts/default" %>
+  </head>
+
+  <body>
+    <%= render 'layouts/nav' %>
+    <div class="container">
+      <%= render 'layouts/flash_msg'%>
+      <%= yield %>
+      <%= render 'layouts/footer'%>
+    <div />
+    <div class="well">
+      <%= debug(params) if Rails.env.development? %>
+    </div>
+  </body>
+</html>

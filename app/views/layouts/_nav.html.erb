@@ -1,0 +1,13 @@
+<nav class="nav">
+  <% if signed_in? %>
+      <p>Hi <%= current_user.lastname %>, you are logged in </p>
+      <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
+
+  <% else %>
+    <div class="link_wrapper">
+      <li class="login"><%= link_to 'Log in', user_session_path, class: 'login_link' %></li>
+      <li class="signup"><%= link_to 'Sign up', new_user_registration_path, class: 'signup_link' %></li>
+    </div>
+  <% end %>
+
+</nav>
